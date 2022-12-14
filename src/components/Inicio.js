@@ -6,18 +6,16 @@ export const Inicio = () => {
   return (
     <div className='home'>
         <h1>
-            Hola soy Kevin Escobar, <strong>desarrollador web</strong> Junior, 
-            ofrezco mis servicios de programación FullStack usando 
-            el stack MERN.
+            Hi My name is Kevin Escobar I'm, <strong>Full Stack Web Developer</strong> I offer you
+            services with MERN Stack, also I know others technologies like Php-Laravel.
         </h1>
         <h2 className='title'>
-            Te ayudo a crear tu sitio o aplicación web usando
-            tecnologías actuales. <Link to="/contacto">Contacta conmigo.</Link> 
+            I can help you to create modern web pages. <Link to="/contacto">Contact with me.</Link> 
         </h2>
 
         <section className='last-works'>
-            <h2 className='heading'> Alguno de mis proyectos</h2>
-            <p>Estos son alguno de mis trabajos de desarrollo web</p>
+            <h2 className='heading'> These are some of my personal projects</h2>
+            <p>These are some of my personal projects make in courses and projects for show you that I know.</p>
             <ListadoTrabajos limite="2"/>
         </section>
     </div>

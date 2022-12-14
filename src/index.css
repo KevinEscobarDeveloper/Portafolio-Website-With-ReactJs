@@ -12,12 +12,12 @@ code {
     monospace;
 }
 
-.layout{
+.layout {
   width: 85%;
   margin: 0 auto;
 }
 
-.header{
+.header {
   display: flex;
   height: 132px;
   justify-content: center;
@@ -27,19 +27,19 @@ code {
   margin-bottom: 35px;
 }
 
-.header .logo{
+.header .logo {
   flex-grow: 2;
   display: flex;
 }
 
-.header .logo span{
+.header .logo span {
   display: block;
   font-size: 92px;
   font-weight: bolder;
   margin-top: -10px;
 }
 
-.header .logo h3{
+.header .logo h3 {
   display: block;
   flex-basis: 40px;
   margin-left: 10px;
@@ -47,11 +47,11 @@ code {
   text-transform: uppercase;
 }
 
-.header nav{
+.header nav {
   flex-grow: 1;
 }
 
-.header nav ul{
+.header nav ul {
   height: 132px;
   display: flex;
   justify-content: flex-end;
@@ -60,16 +60,16 @@ code {
 
 }
 
-.header li{ 
+.header li {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
   margin-left: 15px;
   margin-right: 15px;
-  
+
 }
 
-.header li a{
+.header li a {
   color: black;
   text-decoration: none;
   transition: all 300;
@@ -79,7 +79,7 @@ code {
 .header .active,
 .header a:hover {
   color: #fa4529;
-  
+
 }
 
 .footer {
@@ -95,11 +95,11 @@ code {
   color: #444;
 }
 
-.content{
+.content {
   min-height: 400px;
 }
 
-.home h1{
+.home h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
   font-size: 50px;
@@ -107,17 +107,17 @@ code {
   margin-top: 80px;
 }
 
-.home strong{
+.home strong {
   color: #fa4529;
 }
 
-.home h2{
+.home h2 {
   color: rgb(99, 97, 97);
   font-weight: lighter;
 }
 
 
-.home .title a{
+.home .title a {
   border-radius: 5px;
   padding: 7px;
   color: white;
@@ -129,7 +129,7 @@ code {
 
 
 .page .heading,
-.home .heading{
+.home .heading {
   font-size: 38px;
   font-style: italic;
   font-weight: 500;
@@ -137,18 +137,20 @@ code {
   margin-bottom: 0px;
 }
 
-.page .heading{
+.page .heading {
   font-size: 55px;
   font-weight: bold;
 }
 
 
-.home p{
-  color: rgb(99, 97, 97);;
+.home p {
+  color: rgb(99, 97, 97);
+  ;
 }
 
-input[type="text"], input[type="email"],
-textarea{
+input[type="text"],
+input[type="email"],
+textarea {
   display: block;
   padding: 15px;
   width: 250px;
@@ -157,7 +159,7 @@ textarea{
 }
 
 input[type="submit"],
-button{
+button {
   border-radius: 5px;
   padding: 15px;
   margin-top: 15px;
@@ -169,47 +171,48 @@ button{
   transition: all 300ms;
 }
 
-.home .title a:hover, input[type="submit"]:hover,
-button:hover{
+.home .title a:hover,
+input[type="submit"]:hover,
+button:hover {
   background-color: rgb(106, 177, 0);
   cursor: pointer;
 }
 
-.works{
+.works {
   display: flex;
-  
+
 }
 
-.work-item{
+.work-item {
   flex-basis: 30%;
   flex-grow: 1;
   margin: 30px;
 }
 
-.work-item .mask{
+.work-item .mask {
   width: 100%;
   overflow: hidden;
   box-shadow: 0px 5px 15px #ddd;
   border: 1px solid #eee;
 }
 
-.work-item img{
+.work-item img {
   width: 100%;
   transition: all 500ms;
 }
 
-.work-item .mask:hover img{
+.work-item .mask:hover img {
   width: 130%;
   margin-right: 30%;
 }
 
-.work-item span{
+.work-item span {
   display: block;
   color: gray;
   margin-top: 25px;
 }
 
-.work-item h2{
+.work-item h2 {
   display: block;
   font-size: 30px;
   color: black;
@@ -217,7 +220,7 @@ button:hover{
   margin-bottom: 10px;
 }
 
-.work-item h3{
+.work-item h3 {
   display: block;
   color: #444;
   margin-top: 0px;
@@ -225,27 +228,166 @@ button:hover{
   border-top: 1px solid #ddd;
 }
 
-.work-item a{
+.work-item a {
   color: black;
   text-decoration: none;
   transition: all 300ms;
 }
 
-.work-item a:hover{
+.work-item a:hover {
   color: #fa4529;
 }
 
 
-.page-work .mask{
+.page-work .mask {
   width: 900px;
   overflow: hidden;
   box-shadow: 0px 0px 20px #ccc;
 }
 
-.page-work .mask img{
+.page-work .mask img {
   width: 900px;
 }
 
+.container {
+  position: relative;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.container .card {
+  position: relative;
+  width: 220px;
+  height: 250px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 13px 37px -7px rgb(252, 255, 67);
+  border-radius: 20px;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container .card .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+
+}
+
+.container .card .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+
+.container .card .percent svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 2;
+  stroke: #191919;
+  transform: translate(5px, 5px);
+}
+
+.container .card .percent svg circle:nth-child(2) {
+  stroke: #fdfffe;
+  stroke-dasharray: 440;
+  /* calcula el porcentaje */
+  stroke-dashoffset: calc(85);
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.dot {
+  position: absolute;
+  inset: 5px;
+  z-index: 10px;
+
+  animation: animateDot 2s linear forwards;
+
+}
+
+@keyframes animateDot {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(calc(3.4deg*85));
+  }
+}
+
+.dot::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 10px #04fc43,
+    0 0 30px #ffffff;
+}
+
+.number {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+
+.number h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
 
 
+.number p {
+  font-weight: 300;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
 
+}
