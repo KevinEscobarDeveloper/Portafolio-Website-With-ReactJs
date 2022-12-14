@@ -41,8 +41,9 @@ const backend = [
 ];
 const frontEnd = [
   {
-    id: "Frontend",
-    tech_1: "React Js",
+    id: "React JS",
+    name: "React JS",
+    level: "75"
   },
 ];
 const others = [

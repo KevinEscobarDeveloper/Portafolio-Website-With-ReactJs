@@ -290,6 +290,7 @@ button:hover {
   position: relative;
   width: 150px;
   height: 150px;
+ 
 
 }
 
@@ -313,7 +314,7 @@ button:hover {
   stroke: #fdfffe;
   stroke-dasharray: 440;
   /* calcula el porcentaje */
-  stroke-dashoffset: calc(85);
+  stroke-dashoffset: calc(440 - (440 * var(--level)) / 100);
   opacity: 0;
   animation: fadeIn 1s linear forwards;
   animation-delay: 2.5s;
@@ -332,8 +333,8 @@ button:hover {
 .dot {
   position: absolute;
   inset: 5px;
-  z-index: 10px;
-
+  z-index: 10;
+  transform: rotate(calc(3.6deg * var(--level)));
   animation: animateDot 2s linear forwards;
 
 }
@@ -344,7 +345,7 @@ button:hover {
   }
 
   100% {
-    transform: rotate(calc(3.4deg*85));
+    transform: rotate(calc(3.6deg* var(--level)));
   }
 }
 
