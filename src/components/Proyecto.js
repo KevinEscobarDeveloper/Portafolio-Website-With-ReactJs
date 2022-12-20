@@ -16,8 +16,8 @@ export const Proyecto = () => {
     <div className='mask'>
                   <img src={"/images/"+proyecto.id+".png"}/>
     </div>
-    <p>Tecnologías {proyecto.tecnologias}</p>
-    <p>Descripción {proyecto.descripcion}</p>
+    <p>Tecnologías: {proyecto.tecnologias}</p>
+    <p>Descripción: {proyecto.descripcion}</p>
     <a href={proyecto.url} target="_blank">Ir al proyecto</a>
     
 </div>
