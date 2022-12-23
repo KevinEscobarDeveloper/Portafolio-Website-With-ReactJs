@@ -5,10 +5,12 @@ import { ListadoTrabajos } from './ListadoTrabajos'
 export const Inicio = () => {
   return (
     <div className='home'>
+      <div className='text'>
         <h1>
             Hi My name is Kevin Escobar I'm, <strong>Full Stack Web Developer</strong> I offer you
             services with MERN Stack, also I know others technologies like Php-Laravel.
         </h1>
+        </div>
         <h2 className='title'>
             I can help you to create modern web pages. <Link to="/contacto">Contact with me.</Link> 
         </h2>

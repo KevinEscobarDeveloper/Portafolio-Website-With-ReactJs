@@ -9,7 +9,7 @@ import { frontEnd } from './data-tech/techonologies';
 
 export const Servicios = () => {
 
-    const [techonologies,setTech] = useState(webDesing);
+    const [techonologies] = useState(webDesing);
   return (
     <div className='page'>
         <h1 className='heading'>Servicios</h1>

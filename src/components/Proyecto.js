@@ -8,17 +8,17 @@ export const Proyecto = () => {
     useEffect(()=>{
         let proyecto = trabajos.filter(trabajo => trabajo.nombre === params.nombre);
         setProyecto(proyecto[0]);
-    }, []);
+    }, [params.nombre]);
 
   return (
     <div className='page page-work'>
     <h1 className='heading'>Proyecto: {params.nombre}</h1>
     <div className='mask'>
-                  <img src={"/images/"+proyecto.id+".png"}/>
+                  <img src={"/images/"+proyecto.id+".png"} alt=""/>
     </div>
     <p>Tecnologías: {proyecto.tecnologias}</p>
     <p>Descripción: {proyecto.descripcion}</p>
-    <a href={proyecto.url} target="_blank">Ir al proyecto</a>
+    <a href={proyecto.url} >Ir al proyecto</a>
     
 </div>
   )
