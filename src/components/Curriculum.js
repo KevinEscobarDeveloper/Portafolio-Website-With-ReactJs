@@ -1,6 +1,7 @@
 import React from "react";
 import { Courses } from "./Courses";
 import { Education } from "./layout/Education";
+import { SocialMedia } from "./SocialMedia";
 
 export const Curriculum = () => {
   return (
@@ -11,6 +12,7 @@ export const Curriculum = () => {
       <h2>Courses</h2>
       <Courses/>
       <h2>About Me</h2>
+      <SocialMedia/>
     </div>
   );
 };
