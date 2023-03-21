@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-// http://localhost:3000/static/media/course_1.d928c7c4926b9d913aaa.jpg
+
 
 
 
